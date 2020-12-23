@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./index.css">
+
+    <!-- Chart Css -->
+    <link rel="stylesheet" href="./Chart/Css/Chart.min.css">
+
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+</head>
+<body onload="read()">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <form id="form1" action="" class="border border-success p-4">
+                    <div class="form-group">
+                        <label>Budget</label>
+                        <input type="number" class="form-control" id="budgetFirebase">
+                    </div><br>
+                    <button type="submit" class="btn btn-success">Add</button>
+                </form>
+                <form id="form2" action="" class="mt-2 border border-danger p-4">
+                    <div class="form-group">
+                        <label>Expenses</label>
+                        <input type="number" class="form-control" id="expensesFirebase">
+                    </div><br>
+                    <button type="submit" class="btn btn-danger">Add</button>
+                </form>
+            </div>
+            <div id="chart" class="col-md-8">
+
+            </div>
+        </div>
+        <div class="row mx-auto mt-3" style="font-size: 4rem;">
+            <div class="col-4">
+                <div style="width: 18rem;" class="card">
+                    <div class="card-body">
+                        <h5>Budget</h5>
+                        <i style="color: blue" class="fas fa-dollar-sign"></i>
+                        <span id="Budget"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="width: 18rem;" class="card">
+                    <div class="card-body">
+                        <h5>Expenses</h5>
+                        <i style="color: red" class="fas fa-dollar-sign"></i>
+                        <span id="expenses"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div style="width: 18rem;" class="card">
+                    <div class="card-body">
+                        <h5>Total</h5>
+                        <i style="color: green" class="fas fa-dollar-sign"></i>
+                        <span id="total"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+
+    <!-- Chart Js -->
+    <script src="./Chart/Js/Chart.min.js"></script>
+
+    <!--Bootstrap Js -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+    <!--Jquery -->
+    <script src="./jquery/jq.min.js"></script>
+
+    <!--Font Awesome Js -->
+    <script src="./fontawesome/js/all.min.js"></script>
+
+    <!--Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+    <!--Firebase App -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <!-- Index Js -->
+    <script src="./index.js"></script>
+    
+</body>
+</html>
